@@ -23,6 +23,11 @@ jobs:
 
         -   name: Run tests
             run: npm test
+
+        -   name: Install action dependency
+            run: |
+                cd .github/actions/hello-action
+                npm install
         
         -   name: Run Hello Action
             uses: ./.github/actions/hello-action
