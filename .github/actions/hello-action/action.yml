@@ -1,0 +1,12 @@
+name: "Hello Action"
+description: "A simple custom action"
+
+inputs:
+  name:
+    description: "Name to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: "node16"
+  main: "index.js"
